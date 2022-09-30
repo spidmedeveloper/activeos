@@ -1,0 +1,30 @@
+{
+    "name": "activeos",
+    "version": "1.0.0",
+    "description": "Sistema de Activos Fijos y Alertas de Uniminuto",
+    "main": "src/app.js",
+    "scripts": {
+        "dev": "nodemon ./src/app.js -e '.js,.hbs,.css'",
+        "start": "pm2 start ./src/app.js --name activeos && pm2 save",
+        "stop": "pm2 stop ./src/app.js"
+    },
+    "keywords": [],
+    "author": "Alexander Rubio Caceres",
+    "license": "ISC",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.2.0",
+        "axios": "^0.27.2",
+        "bootstrap": "^5.2.1",
+        "bootstrap-table": "^1.21.1",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.1",
+        "express-handlebars": "^6.0.6",
+        "fs": "^0.0.1-security",
+        "jquery": "^3.6.1",
+        "morgan": "^1.10.0",
+        "mysql": "^2.18.1",
+        "nodemailer": "^6.8.0",
+        "path": "^0.12.7",
+        "popper.js": "^1.16.1"
+    }
+}
